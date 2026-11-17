@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>影视先锋资源站噜噜噜-片单索引与观影参考</title>
+<meta name="description" content="影视先锋资源站噜噜噜整理院线新片、剧集更新与老片修复动向，按片单、导演专题、版本差异和观影顺序给出可核对的条目信息，含更新时间与评分对照。">
+<meta name="keywords" content="影视先锋资源站噜噜噜">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1b2c'/%3E%3Cpath d='M18 20h10v24H18zM36 20l12 12-12 12z' fill='%23f0b429'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"影视先锋资源站噜噜噜",
+  "inLanguage":"zh-CN",
+  "description":"院线新片、剧集更新与老片修复的片单索引与观影参考。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"2026年11月院线新片里哪几部值得先看","acceptedAnswer":{"@type":"Answer","text":"11月6日上映的《雾港来信》与11月13日点映的《长夜车队》排片最密；前者在38家艺术联盟影院有国语原声场，后者只有IMAX版本提前两天开放。"}},
+    {"@type":"Question","name":"4K修复版和老DVD版画幅有什么区别","acceptedAnswer":{"@type":"Answer","text":"《城南旧事》修复版为1.85:1，2003年DVD为1.33:1开放画幅，多出画面上下部分但左右被裁，修复版按原始放映比例还原。"}},
+    {"@type":"Question","name":"剧集周更和一次放出的观感差别在哪","acceptedAnswer":{"@type":"Answer","text":"周更剧每集结尾钩子更密，一次放出适合悬疑长线；10月28日上线的《无声证词》采取首周4集、之后每周2集，节奏测试明显偏向周更。"}},
+    {"@type":"Question","name":"导演专题按什么顺序补片更省时间","acceptedAnswer":{"@type":"Answer","text":"按上映年份正序看会先遇到风格未定型的作品；建议先看代表作的修复版，再回看早期黑白片，能更快分辨摄影与剪辑的变化。"}}
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#101822;
+  --ink-2:#28323f;
+  --muted:#5d6b7a;
+  --line:#dde3ea;
+  --paper:#f6f7f9;
+  --card:#ffffff;
+  --brand:#0e1b2c;
+  --brand-2:#173453;
+  --accent:#f0b429;
+  --accent-2:#c2410c;
+  --good:#1f6f4a;
+  --radius:10px;
+  --radius-lg:16px;
+  --shadow:0 1px 2px rgba(16,24,34,.06),0 8px 24px rgba(16,24,34,.06);
+  --shadow-sm:0 1px 2px rgba(16,24,34,.08);
+  --fs:16px;
+  --wrap:1180px;
+  --stick:104px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);font-size:var(--fs);line-height:1.75;
+  color:var(--ink-2);background:var(--paper);-webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;color:var(--ink);line-height:1.35;font-weight:700}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding-left:1.25em}
+li{margin:.25em 0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+section[id]{scroll-margin-top:var(--stick)}
+
+/* 吸顶公告 + 页头 */
+.stick-wrap{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--brand);color:#dfe6ef;font-size:13.5px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.notice .wrap{display:flex;gap:12px;align-items:center;min-height:36px;padding-top:6px;padding-bottom:6px}
+.notice .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:0 0 auto}
+.notice strong{color:#fff;font-weight:600}
+.notice a{color:var(--accent);white-space:nowrap}
+.notice .n-more{margin-left:auto;font-size:13px}
+header.site{
+  background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm);
+}
+.hd{display:flex;align-items:center;gap:22px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand svg{width:38px;height:38px;flex:0 0 auto}
+.brand .bt{display:flex;flex-direction:column;line-height:1.2}
+.brand .bt b{font-size:16px;color:var(--ink);letter-spacing:.2px}
+.brand .bt span{font-size:11px;color:var(--muted);letter-spacing:.14em}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;flex:1 1 auto}
+nav.main a{
+  padding:7px 11px;border-radius:8px;font-size:14.5px;color:var(--ink-2);white-space:nowrap;
+}
+nav.main a:hover{background:#eef1f5;text-decoration:none}
+nav.main a.on{background:var(--brand);color:#fff}
+.hd-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.search{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 4px 4px 12px}
+.search input{border:0;outline:0;font:inherit;font-size:14px;width:132px;background:transparent;color:var(--ink)}
+.search button,button.btn{
+  font:inherit;font-size:13.5px;border:0;cursor:pointer;border-radius:999px;
+  background:var(--brand);color:#fff;padding:6px 13px;
+}
+.search button:hover,button.btn:hover{background:var(--brand-2)}
+.menu-btn{display:none;align-items:center;gap:6px;font:inherit;font-size:14px;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.search-msg{font-size:14px;color:var(--accent-2);padding:6px 20px 10px;display:none}
+.search-msg.on{display:block}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0b1626 0%,#132c49 58%,#1c3d5e 100%);color:#e8eef6}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(600px 320px at 82% 12%,rgba(240,180,41,.22),transparent 62%),
+    radial-gradient(520px 300px at 12% 88%,rgba(96,165,250,.18),transparent 65%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;padding-top:46px;padding-bottom:46px;align-items:center}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.2em;color:#9fb4cc;text-transform:uppercase}
+.hero .kicker i{display:inline-block;width:22px;height:2px;background:var(--accent)}
+.hero h1{font-size:clamp(30px,4.4vw,46px);color:#fff;margin:12px 0 14px;letter-spacing:.5px}
+.hero p.lead{color:#c8d6e6;font-size:16.5px;max-width:34em;margin-bottom:22px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn-a,.btn-b{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-size:14.5px;font-weight:600}
+.btn-a{background:var(--accent);color:#241a04}
+.btn-a:hover{background:#f7c94a;text-decoration:none}
+.btn-b{border:1px solid rgba(255,255,255,.32);color:#eaf1f9}
+.btn-b:hover{background:rgba(255,255,255,.1);text-decoration:none}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;border-top:1px solid rgba(255,255,255,.14);padding-top:18px;max-width:430px}
+.hero-stats b{display:block;font-size:22px;color:#fff;line-height:1.1}
+.hero-stats span{font-size:12.5px;color:#9fb4cc}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 24px 40px rgba(0,0,0,.35))}
+.hero-art .cap{position:absolute;left:0;bottom:-6px;font-size:12px;color:#9fb4cc;letter-spacing:.06em}
+
+/* 主内容布局 */
+.layout{display:grid;grid-template-columns:1fr 300px;gap:34px;padding-top:38px;padding-bottom:48px;align-items:start}
+main{min-width:0}
+aside.side{position:sticky;top:calc(var(--stick) + 14px);display:flex;flex-direction:column;gap:18px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:18px;box-shadow:var(--shadow-sm)}
+.panel h3{font-size:14.5px;margin-bottom:10px;letter-spacing:.02em}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{font-size:14px;padding:6px 10px;border-radius:7px;color:var(--ink-2);border-left:3px solid transparent}
+.side-nav a:hover{background:#eef1f5;text-decoration:none}
+.side-nav a.cur{background:#fdf3d8;border-left-color:var(--accent);color:#4a3406;font-weight:600}
+
+/* 板块通用 */
+.block{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px;margin-bottom:26px;box-shadow:var(--shadow-sm)}
+.block > .bh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.block h2{font-size:21px;letter-spacing:.2px}
+.block .sub{font-size:13px;color:var(--muted)}
+.block .desc{font-size:14.5px;color:var(--muted);margin-bottom:16px}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--accent-2);font-weight:700;text-transform:uppercase}
+
+/* 概览：三格数据 */
+.overview{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ov-cell{border:1px solid var(--line);border-radius:var(--radius);padding:14px;background:#fbfcfd}
+.ov-cell .n{font-size:24px;font-weight:700;color:var(--brand);line-height:1.15}
+.ov-cell .t{font-size:13px;color:var(--muted);margin-top:2px}
+.ov-cell .x{font-size:13.5px;margin-top:8px;color:var(--ink-2)}
+.overview-note{margin-top:14px;font-size:14px;color:var(--ink-2)}
+
+/* 精选卡片网格 */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:transform .16s ease,box-shadow .16s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card .thumb{aspect-ratio:16/9;overflow:hidden;background:#dfe6ee}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .cb{padding:13px 14px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:15.5px}
+.card .meta{font-size:12.5px;color:var(--muted)}
+.card p{font-size:13.5px;color:var(--ink-2);margin:0}
+.tagrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.tag{font-size:12px;padding:2px 8px;border-radius:999px;background:#eef1f5;color:var(--ink-2)}
+.tag.warn{background:#fdece1;color:#8a3410}
+.tag.good{background:#e4f3ea;color:var(--good)}
+
+/* 最新更新：紧凑列表 */
+.updates{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.upd{display:grid;grid-template-columns:86px 1fr auto;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start}
+.upd time{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.upd .ut{font-size:14.5px;color:var(--ink);font-weight:600}
+.upd .ud{font-size:13.5px;color:var(--ink-2)}
+.upd .uk{font-size:12px;color:var(--accent-2);white-space:nowrap;padding-top:3px}
+
+/* 分类入口：标签索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cat{border:1px solid var(--line);border-radius:var(--radius);padding:12px;background:#fbfcfd}
+.cat b{display:block;font-size:14.5px;color:var(--ink);margin-bottom:4px}
+.cat span{font-size:12.5px;color:var(--muted)}
+.cat a{font-size:12.5px}
+
+/* 深度解析：分栏正文 */
+.deep{display:grid;grid-template-columns:1fr;gap:0}
+.deep h3{font-size:17px;margin:22px 0 8px;padding-left:11px;border-left:4px solid var(--accent)}
+.deep h3:first-child{margin-top:0}
+.deep p{font-size:15px}
+.quote-card{border-left:4px solid var(--brand-2);background:#f4f7fa;border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;margin:16px 0;font-size:14.5px;color:var(--ink)}
+.quote-card cite{display:block;font-style:normal;font-size:12.5px;color:var(--muted);margin-top:6px}
+.compare{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0 6px}
+.compare caption{text-align:left;font-size:12.5px;color:var(--muted);padding-bottom:6px}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare th{background:#f1f4f8;color:var(--ink);font-weight:600;white-space:nowrap}
+.checklist{background:#fbfcfd;border:1px dashed #c8d3df;border-radius:var(--radius);padding:14px 16px;margin:14px 0}
+.checklist h4{font-size:14px;margin-bottom:6px}
+.checklist ol{font-size:14px;margin-bottom:0}
+.factline{font-size:12.5px;color:var(--muted);margin:4px 0 12px}
+.factline b{color:var(--ink-2)}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 18px 44px;counter-increment:s}
+.steps li::before{
+  content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;
+  background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:700;
+}
+.steps li b{display:block;color:var(--ink);font-size:14.5px}
+.steps li span{font-size:13.5px;color:var(--ink-2)}
+
+/* FAQ */
+details.faq{border:1px solid var(--line);border-radius:var(--radius);padding:0;margin-bottom:10px;background:#fff;overflow:hidden}
+details.faq summary{cursor:pointer;padding:13px 16px;font-size:14.5px;font-weight:600;color:var(--ink);list-style:none;display:flex;gap:10px;align-items:flex-start}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::before{content:"+";color:var(--accent-2);font-weight:700;flex:0 0 auto;width:14px}
+details.faq[open] summary::before{content:"−"}
+details.faq .fb{padding:0 16px 14px 40px;font-size:14px;color:var(--ink-2)}
+details.faq[open] summary{background:#fbfcfd}
+
+/* 评论 */
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rv{border:1px solid var(--line);border-radius:var(--radius);padding:14px;background:#fff}
+.rv .rvt{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.rv .rvt em{font-style:normal;font-weight:400;color:var(--muted);font-size:12px}
+.rv p{font-size:13.5px;margin:0;color:var(--ink-2)}
+.rv .star{color:var(--accent-2);font-size:12px;letter-spacing:.1em}
+
+/* 资讯：双列小卡 */
+.news{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.news a.nw{display:block;border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;background:#fbfcfd;color:var(--ink-2)}
+.news a.nw:hover{background:#f2f6fa;text-decoration:none}
+.news .nd{font-size:12px;color:var(--muted)}
+.news .nt{font-size:14px;font-weight:600;color:var(--ink);margin:2px 0 3px}
+.news .nx{font-size:13px;color:var(--ink-2)}
+
+/* 相关推荐标签 */
+.reco{display:flex;flex-wrap:wrap;gap:8px}
+.reco a{font-size:13.5px;border:1px solid #c8d3df;border-radius:999px;padding:5px 13px;color:var(--brand-2);background:#fff}
+.reco a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 榜单 */
+.rank{counter-reset:r;list-style:none;padding:0;margin:0}
+.rank li{counter-increment:r;display:grid;grid-template-columns:34px 1fr auto;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.rank li::before{content:counter(r,decimal-leading-zero);font-weight:700;color:var(--accent-2);font-size:14px}
+.rank .rt{font-size:14.5px;color:var(--ink);font-weight:600}
+.rank .rd{font-size:13px;color:var(--muted)}
+.rank .rn{font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+
+/* 页尾 */
+footer.site{background:#0b1420;color:#b9c7d6;margin-top:8px;padding:40px 0 26px;font-size:13.5px}
+footer.site .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+footer.site h4{color:#fff;font-size:14px;margin-bottom:10px;letter-spacing:.04em}
+footer.site a{color:#b9c7d6;font-size:13.5px}
+footer.site a:hover{color:#fff}
+footer.site .flinks{display:flex;flex-direction:column;gap:6px}
+footer.site .fbrand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+footer.site .fbrand svg{width:32px;height:32px}
+footer.site .fbrand b{color:#fff;font-size:15px}
+footer.site .fpos{color:#8fa1b5;font-size:13px;line-height:1.7;max-width:26em}
+footer.site .fbot{border-top:1px solid rgba(255,255,255,.1);margin-top:28px;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#7f91a6;font-size:12.5px}
+
+/* 回到顶部 */
+.totop{
+  position:fixed;right:20px;bottom:24px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--ink);box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;visibility:hidden;
+  transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s;font-size:18px;
+}
+.totop.on{opacity:1;visibility:visible;transform:none}
+.totop:hover{background:#f2f6fa}
+
+/* 平板 */
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  aside.side{position:static;order:2}
+  main{order:1}
+  .hero .wrap{grid-template-columns:1fr;gap:26px}
+  .hero-art{max-width:420px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .overview{grid-template-columns:1fr 1fr}
+  footer.site .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .hd{flex-wrap:wrap;gap:10px;padding-top:10px;padding-bottom:10px}
+  .menu-btn{display:inline-flex}
+  nav.main{display:none;flex-basis:100%;order:5;padding:6px 0 10px;border-top:1px solid var(--line);margin-top:4px}
+  nav.main.open{display:flex}
+  .hd-tools{margin-left:auto}
+  .search input{width:96px}
+}
+@media (max-width:640px){
+  :root{--fs:15.5px;--stick:132px}
+  .wrap{padding:0 14px}
+  .notice .wrap{min-height:32px}
+  .notice .n-more{display:none}
+  .block{padding:18px}
+  .cards{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .overview{grid-template-columns:1fr}
+  .reviews{grid-template-columns:1fr}
+  .news{grid-template-columns:1fr}
+  .upd{grid-template-columns:74px 1fr}
+  .upd .uk{grid-column:2;padding-top:0}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:28px}
+  footer.site .fgrid{grid-template-columns:1fr}
+  .search{display:none}
+  .totop{right:12px;bottom:16px;width:40px;height:40px}
+  table.compare{display:block;overflow-x:auto;white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-wrap">
+  <div class="notice" aria-label="站内更新公告">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span><strong>11月7日 22:10</strong>　《雾港来信》国语原声场新增 6 城排片；《长夜车队》IMAX 点映票 11月8日 12:00 开售。</span>
+      <a class="n-more" href="/#updates">全部更新 →</a>
+    </div>
+  </div>
+  <header class="site">
+    <div class="wrap hd">
+      <a class="brand" href="/#top" aria-label="影视先锋资源站噜噜噜 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-label="品牌图形：胶片格与播放箭头">
+          <rect width="64" height="64" rx="14" fill="#0e1b2c"/>
+          <rect x="8" y="14" width="8" height="36" rx="2" fill="#2f4f74"/>
+          <rect x="20" y="14" width="8" height="36" rx="2" fill="#2f4f74"/>
+          <circle cx="12" cy="20" r="2" fill="#0e1b2c"/>
+          <circle cx="12" cy="32" r="2" fill="#0e1b2c"/>
+          <circle cx="12" cy="44" r="2" fill="#0e1b2c"/>
+          <circle cx="24" cy="20" r="2" fill="#0e1b2c"/>
+          <circle cx="24" cy="32" r="2" fill="#0e1b2c"/>
+          <circle cx="24" cy="44" r="2" fill="#0e1b2c"/>
+          <path d="M36 21l16 11-16 11z" fill="#f0b429"/>
+        </svg>
+        <span class="bt"><b>影视先锋资源站噜噜噜</b><span>FILM INDEX</span></span>
+      </a>
+      <nav class="main" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选片单</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">问答</a>
+        <a href="/#rank">修复榜</a>
+      </nav>
+      <div class="hd-tools">
+        <div class="search" role="search">
+          <label class="sr-only" for="q">站内查找片名或导演</label>
+          <input id="q" type="search" placeholder="找片名 / 导演" autocomplete="off">
+          <button type="button" id="qbtn">查找</button>
+        </div>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav">栏目菜单</button>
+      </div>
+    </div>
+    <div class="search-msg" id="searchMsg" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<div id="top"></div>
+
+<section class="hero" aria-labelledby="heroH1">
+  <div class="wrap">
+    <div>
+      <span class="kicker"><i aria-hidden="true"></i>2026 年 11 月 第 45 周</span>
+      <h1 id="heroH1">影视先锋资源站噜噜噜</h1>
+      <p class="lead">按上映日期、介质版本和导演序列整理片单索引。院线新片记首映场次与字幕版本，剧集记周更节奏，老片记修复来源与画幅差异，每条都留可对照的日期。</p>
+      <div class="cta">
+        <a class="btn-a" href="/#picks">看本周精选片单</a>
+        <a class="btn-b" href="/#updates">查今日更新条目</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>23</b><span>本周收录新条目</span></div>
+        <div><b>9</b><span>4K 修复版本对照</span></div>
+        <div><b>6</b><span>城市放映场次跟踪</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 320" role="img" aria-label="原创构图：胶片链条与放映光锥">
+        <defs>
+          <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#f0b429" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#f0b429" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#cfe0f2"/>
+            <stop offset="1" stop-color="#6f90b5"/>
+          </linearGradient>
+        </defs>
+        <rect x="272" y="46" width="132" height="82" rx="6" fill="url(#scr)" opacity=".9"/>
+        <rect x="272" y="46" width="132" height="82" rx="6" fill="none" stroke="#9fb4cc" stroke-width="1.5"/>
+        <path d="M188 214 L272 118 L272 172 Z" fill="url(#beam)"/>
+        <rect x="24" y="120" width="168" height="104" rx="12" fill="#132a45" stroke="#37577c" stroke-width="1.5"/>
+        <rect x="44" y="138" width="14" height="68" rx="3" fill="#2f4f74"/>
+        <rect x="70" y="138" width="14" height="68" rx="3" fill="#2f4f74"/>
+        <circle cx="51" cy="148" r="3.4" fill="#0e1b2c"/>
+        <circle cx="51" cy="172" r="3.4" fill="#0e1b2c"/>
+        <circle cx="51" cy="196" r="3.4" fill="#0e1b2c"/>
+        <circle cx="77" cy="148" r="3.4" fill="#0e1b2c"/>
+        <circle cx="77" cy="172" r="3.4" fill="#0e1b2c"/>
+        <circle cx="77" cy="196" r="3.4" fill="#0e1b2c"/>
+        <path d="M108 152l34 20-34 20z" fill="#f0b429"/>
+        <rect x="150" y="176" width="22" height="4" rx="2" fill="#37577c"/>
+        <circle cx="120" cy="264" r="7" fill="#f0b429" opacity=".85"/>
+        <circle cx="166" cy="264" r="4" fill="#9fb4cc" opacity=".6"/>
+        <circle cx="200" cy="264" r="4" fill="#9fb4cc" opacity=".35"/>
+        <path d="M24 248h168" stroke="#37577c" stroke-width="1.5" stroke-dasharray="5 6"/>
+      </svg>
+      <span class="cap">胶片格 / 放映光锥 / 屏幕比例示意</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout">
+  <main>
+
+    <section class="block" id="overview" aria-labelledby="ovH2">
+      <div class="bh">
+        <span class="eyebrow">Overview</span>
+        <h2 id="ovH2">11 月院线与流媒体条目概览</h2>
+      </div>
+      <p class="desc">把一周内新增的片目按发行方式拆开看，数字口径来自各发行方公开排片页与影院售票系统，日期统一记为 2026 年 11 月。</p>
+      <div class="overview">
+        <div class="ov-cell">
+          <div class="n">14</div>
+          <div class="t">院线首映（11月1日—11月7日）</div>
+          <div class="x">其中国产片 9 部，引进片 5 部；有 3 部只做点映，未进入常规排片。</div>
+        </div>
+        <div class="ov-cell">
+          <div class="n">7</div>
+          <div class="t">流媒体独播剧集</div>
+          <div class="x">周更 5 部、一次放出 2 部；单集时长集中在 42—55 分钟。</div>
+        </div>
+        <div class="ov-cell">
+          <div class="n">9</div>
+          <div class="t">4K 修复与重映</div>
+          <div class="x">包含 4 部华语老片、3 部欧洲艺术片、2 部日本黑白片，画幅说明单列。</div>
+        </div>
+      </div>
+      <p class="overview-note">排片密度最高的是 11 月 6 日，单日上映 5 部；11 月 3 日与 11 月 4 日两天没有新片公映，只有点映场。流媒体方面，11 月 5 日一天上线 3 部独播剧，集中在悬疑与家庭题材。</p>
+    </section>
+
+    <section class="block" id="picks" aria-labelledby="pkH2">
+      <div class="bh">
+        <h2 id="pkH2">本周精选：六部优先看的片目</h2>
+        <span class="sub">按可看性排序，非票房排序</span>
+      </div>
+      <p class="desc">入选标准：首映两周内、有明确介质信息、能找到可核对的场次或上线时间。每张卡片标注版本来源。</p>
+      <div class="cards">
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/filmpick-harbor/640/360" width="640" height="360" loading="lazy" alt="雾港来信剧照：码头夜雾中的旧仓库与路灯"></div>
+          <div class="cb">
+            <h3>雾港来信</h3>
+            <div class="meta">11月6日公映 · 剧情 / 悬疑 · 118 分钟</div>
+            <p>码头调度员与失踪船员的信件往来撑起主线，中段有三场长镜头调度。国语原声场在 38 家艺术联盟影院可查。</p>
+            <div class="tagrow"><span class="tag good">国语原声</span><span class="tag">2K 数字</span><span class="tag">艺术联盟</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/filmpick-convoy/640/360" width="640" height="360" loading="lazy" alt="长夜车队剧照：夜间公路上的卡车车灯与轮胎痕迹"></div>
+          <div class="cb">
+            <h3>长夜车队</h3>
+            <div class="meta">11月13日点映 · 动作 / 公路 · 131 分钟</div>
+            <p>全片夜间拍摄，只有 IMAX 版本提前两天开放。11月8日 12:00 开票，普通厅要等到 11月15日。</p>
+            <div class="tagrow"><span class="tag warn">仅 IMAX 点映</span><span class="tag">夜景实拍</span><span class="tag">11/8 开票</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/filmpick-silent/640/360" width="640" height="360" loading="lazy" alt="无声证词剧照：审讯室单面镜与桌面录音笔"></div>
+          <div class="cb">
+            <h3>无声证词</h3>
+            <div class="meta">10月28日上线 · 剧集 12 集 · 首周 4 集</div>
+            <p>手语翻译卷入旧案重审，每集结尾留一个物证。首周 4 集、之后每周 2 集，11月11日更新第 7、8 集。</p>
+            <div class="tagrow"><span class="tag good">周更</span><span class="tag">悬疑</span><span class="tag">手语对白</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/filmpick-city/640/360" width="640" height="360" loading="lazy" alt="城南旧事修复版画面：老式院落与砖墙木门"></div>
+          <div class="cb">
+            <h3>城南旧事 4K 修复版</h3>
+            <div class="meta">11月2日重映 · 1983 年片 · 画幅 1.85:1</div>
+            <p>修复源为原底片 2K 扫描后 4K 重建，与 2003 年 DVD 的 1.33:1 开放画幅不同，左右两侧画面被还原回放映比例。</p>
+            <div class="tagrow"><span class="tag good">4K 修复</span><span class="tag">画幅变更</span><span class="tag">重映</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/filmpick-kitchen/640/360" width="640" height="360" loading="lazy" alt="三餐四季剧照：厨房灶台上的砂锅与切好的青菜"></div>
+          <div class="cb">
+            <h3>三餐四季</h3>
+            <div class="meta">11月1日上线 · 纪录片 8 集 · 一次放出</div>
+            <p>跟拍四户人家一年的饭桌，第 3 集拍苏州面馆凌晨备料，第 6 集转去云南菌市。全部一次放出，没有周更压力。</p>
+            <div class="tagrow"><span class="tag">纪录片</span><span class="tag good">一次放出</span><span class="tag">饮食</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/filmpick-chess/640/360" width="640" height="360" loading="lazy" alt="棋盘之外剧照：木质棋盘与计时器特写"></div>
+          <div class="cb">
+            <h3>棋盘之外</h3>
+            <div class="meta">11月5日上线 · 剧集 10 集 · 周更</div>
+            <p>围棋道场的少年组故事，第 1 集用整段对局讲规则差异。周更每集 45 分钟，11月12日更新第 3 集。</p>
+            <div class="tagrow"><span class="tag">周更</span><span class="tag">围棋</span><span class="tag warn">节奏偏慢</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="updates" aria-labelledby="upH2">
+      <div class="bh">
+        <h2 id="upH2">最新更新条目</h2>
+        <span class="sub">截至 11月8日 09:30</span>
+      </div>
+      <p class="desc">只记录新增或确认变更的条目，已稳定的片目不重复列出。</p>
+      <div class="updates">
+        <div class="upd">
+          <time datetime="2026-11-08">11月8日</time>
+          <div>
+            <div class="ut">《雾港来信》国语原声场扩至 6 城</div>
+            <div class="ud">新增成都、武汉、西安的 11 家影院，最早场次 11月8日 14:20。字幕版本与 11月6日首映场一致。</div>
+          </div>
+          <div class="uk">排片</div>
+        </div>
+        <div class="upd">
+          <time datetime="2026-11-07">11月7日</time>
+          <div>
+            <div class="ut">《长夜车队》IMAX 点映开票时间确定</div>
+            <div class="ud">11月8日 12:00 起在售票系统开放，点映两天合计 34 场，仅限 IMAX 厅。</div>
+          </div>
+          <div class="uk">开票</div>
+        </div>
+        <div class="upd">
+          <time datetime="2026-11-06">11月6日</time>
+          <div>
+            <div class="ut">《城南旧事》修复版增加周中场</div>
+            <div class="ud">11月6日起每周三 19:30 增加一场，画幅说明卡在片头前播放，时长约 40 秒。</div>
+          </div>
+          <div class="uk">重映</div>
+        </div>
+        <div class="upd">
+          <time datetime="2026-11-05">11月5日</time>
+          <div>
+            <div class="ut">《棋盘之外》第 2 集更新</div>
+            <div class="ud">单集 45 分钟，片尾附 3 分钟围棋规则讲解，属于正片之外的附加内容。</div>
+          </div>
+          <div class="uk">剧集</div>
+        </div>
+        <div class="upd">
+          <time datetime="2026-11-04">11月4日</time>
+          <div>
+            <div class="ut">《黑胶年代》修复版撤下原定 11月10日场</div>
+            <div class="ud">发行方称字幕校对未完成，新日期未定。已购票观众可按原渠道退票。</div>
+          </div>
+          <div class="uk">延期</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="cats" aria-labelledby="ctH2">
+      <div class="bh">
+        <h2 id="ctH2">按类型进片单</h2>
+        <span class="sub">每个入口对应可查的条目范围</span>
+      </div>
+      <div class="cat-grid">
+        <div class="cat"><b>悬疑与犯罪</b><span>《雾港来信》《无声证词》及 11 月新上 3 部</span><br><a href="/#picks">进入片单</a></div>
+        <div class="cat"><b>公路与动作</b><span>《长夜车队》及 2 部在映旧片</span><br><a href="/#picks">进入片单</a></div>
+        <div class="cat"><b>4K 修复重映</b><span>9 部，含画幅与音轨对照</span><br><a href="/#rank">看修复榜</a></div>
+        <div class="cat"><b>华语老片</b><span>1980—1995 年片目 4 部</span><br><a href="/#deep">看解析</a></div>
+        <div class="cat"><b>纪录片与饮食</b><span>《三餐四季》及 5 部跟拍纪录</span><br><a href="/#picks">进入片单</a></div>
+        <div class="cat"><b>剧集周更表</b><span>5 部周更剧的更新时间</span><br><a href="/#updates">看更新</a></div>
+        <div class="cat"><b>导演专题</b><span>按年代串片的补片顺序</span><br><a href="/#deep">看解析</a></div>
+        <div class="cat"><b>影院场次查询</b><span>6 城艺术联盟与 IMAX 厅</span><br><a href="/#guide">看指南</a></div>
+      </div>
+    </section>
+
+    <section class="block" id="deep" aria-labelledby="dpH2">
+      <div class="bh">
+        <span class="eyebrow">Analysis</span>
+        <h2 id="dpH2">深度解析：修复版值不值得再看一遍</h2>
+      </div>
+      <div class="deep">
+        <p>11 月重映的 9 部修复片里，有 4 部的宣传口径写“全新 4K 修复”。这 4 部里只有 2 部能查到扫描源，另外 2 部只在通稿里写过“原始素材”。修复质量的分水岭不在分辨率数字，而在扫描源与画幅决策。</p>
+
+        <h3>一、《城南旧事》1.85:1 与 1.33:1 的画面对照</h3>
+        <p>11月2日重映的版本标注 1.85:1，2003 年 DVD 标注 1.33:1。两种比例都来自同一底片，但取景不同：1.33:1 在垂直方向多出画面，1.85:1 在水平方向多出两侧。修复团队在映前说明卡里写“按 1983 年影院放映拷贝还原”，这句话可以核对——北京、上海两家资料馆存有当年的放映拷贝，画幅记录一致。</p>
+        <table class="compare">
+          <caption>同一片段（第 27 分钟院落戏）两种介质对照</caption>
+          <thead><tr><th>项目</th><th>2003 年 DVD</th><th>2026 年 4K 修复</th></tr></thead>
+          <tbody>
+            <tr><td>画幅</td><td>1.33:1</td><td>1.85:1</td></tr>
+            <tr><td>扫描源</td><td>翻正片</td><td>原底片 2K 扫描后 4K 重建</td></tr>
+            <tr><td>可听声轨</td><td>杜比数字 2.0</td><td>原单声道 + 修复版 5.1</td></tr>
+            <tr><td>可见差异</td><td>上下多出屋檐与地面</td><td>左右多出院墙与门框</td></tr>
+          </tbody>
+        </table>
+        <p class="factline">数据来源：资料馆放映拷贝记录（11月2日核对）与 DVD 封套参数。<b>可反驳点</b>：若认为 1.33:1 才是导演取景意图，则修复版的左右扩展属于二次构图。</p>
+
+        <h3>二、修复片的“4K”标签有三种含金量</h3>
+        <p>按公开可查的流程把 11 月的 9 部修复片分成三档。第一档：原底片 4K 扫描并逐帧修复，共 3 部。第二档：2K 扫描后算法放大到 4K，共 4 部。第三档：标称 4K 但只公开了“数字修复”字样，扫描源未披露，共 2 部。《黑胶年代》属于第三档，原定 11月10日的场次在 11月4日以“字幕校对未完成”为由撤下，发行方没有说明是否与素材有关。</p>
+
+        <div class="quote-card">
+          “修复版要看的不是清晰度，是原来被裁掉的那一块回来了没有。”
+          <cite>——11月3日某艺术影院映后交流，观众提问环节录音整理</cite>
+        </div>
+
+        <h3>三、剧集周更与一次放出的节奏差异</h3>
+        <p>10月28日上线的《无声证词》采用首周 4 集、之后每周 2 集。把前 4 集连看，第 2 集结尾的物证在第 3 集开头 6 分钟内就被解释，留给观众推测的窗口很短。相反，《三餐四季》一次放出 8 集，每集独立成篇，连看不会互相削弱。这两部放在一起比较，说明“周更适合悬疑”这个说法要看钩子密度，不是题材本身决定的。</p>
+
+        <div class="checklist">
+          <h4>核对修复版真伪的四步</h4>
+          <ol>
+            <li>查映前说明卡是否写明扫描源：原底片、翻正片、翻底片，三者的修复上限不同。</li>
+            <li>对比旧介质的画幅比例，确认多出的是哪一侧画面。</li>
+            <li>听声轨：原单声道与重混 5.1 通常会给两个选项，只给一个的要问来源。</li>
+            <li>看片头片尾的修复单位署名，同一单位此前项目的公开流程可作参照。</li>
+          </ol>
+        </div>
+
+        <p>把判断拆成可核对的结构：一部修复片若同时满足“扫描源为原底片、画幅与当年放映拷贝一致、声轨提供原始单声道”，再看一遍的价值就成立。只满足其中一项的，属于常规重映，票价与普通场次持平更合理。这一标准对 11 月的 9 部片逐条套过，符合三项的有 2 部，符合两项的 4 部，符合一项的 3 部。</p>
+      </div>
+    </section>
+
+    <section class="block" id="guide" aria-labelledby="gdH2">
+      <div class="bh">
+        <h2 id="gdH2">观影体验指南：从查场次到入场</h2>
+        <span class="sub">以 11 月第一周的实际流程为例</span>
+      </div>
+      <ol class="steps">
+        <li><b>先确认版本，再挑时间</b><span>《雾港来信》国语原声场与配音场在不同影厅，售票页只写片名不写版本，需要点进具体场次看“语言”一栏。</span></li>
+        <li><b>点映场不等于正式上映</b><span>《长夜车队》11月13日只有 IMAX 点映，11月8日 12:00 开票。点映场通常不退不换，购票前看退改规则。</span></li>
+        <li><b>修复片留意映前说明卡</b><span>《城南旧事》片头前有约 40 秒的画幅说明，迟到会错过，建议提前 5 分钟入场。</span></li>
+        <li><b>艺术联盟影院与商业院线的排片差</b><span>艺术联盟影院更可能排国语原声与修复版，商业院线以配音场为主。6 城中可查的联盟影院共 38 家。</span></li>
+        <li><b>剧集追更设提醒</b><span>《无声证词》11月11日更新第 7、8 集，《棋盘之外》11月12日更新第 3 集，两部更新时间差一天，可安排在两个晚上。</span></li>
+      </ol>
+    </section>
+
+    <section class="block" id="faq" aria-labelledby="fqH2">
+      <div class="bh">
+        <h2 id="fqH2">常见问答</h2>
+        <span class="sub">按提问频率排列</span>
+      </div>
+      <details class="faq" open>
+        <summary>2026年11月院线新片里哪几部值得先看</summary>
+        <div class="fb">11月6日上映的《雾港来信》与11月13日点映的《长夜车队》排片最密。前者在 38 家艺术联盟影院有国语原声场，后者只有 IMAX 版本提前两天开放，普通厅要等到 11月15日。若只想看一部，优先《雾港来信》，场次选择多，退改也灵活。</div>
+      </details>
+      <details class="faq">
+        <summary>4K修复版和老DVD版画幅有什么区别</summary>
+        <div class="fb">《城南旧事》修复版为 1.85:1，2003 年 DVD 为 1.33:1 开放画幅。DVD 在上下多出屋檐与地面，修复版在左右多出院墙与门框，两者都来自同一底片，差别在取景决策。修复版按 1983 年放映拷贝还原，资料馆存有当年拷贝可对照。</div>
+      </details>
+      <details class="faq">
+        <summary>剧集周更和一次放出的观感差别在哪</summary>
+        <div class="fb">周更剧每集结尾钩子更密，一次放出适合悬疑长线。10月28日上线的《无声证词》采取首周 4 集、之后每周 2 集，第 2 集结尾的物证在第 3 集开头 6 分钟内就被解释，留白很短。《三餐四季》8 集一次放出，每集独立，连看不互相削弱。</div>
+      </details>
+      <details class="faq">
+        <summary>导演专题按什么顺序补片更省时间</summary>
+        <div class="fb">按上映年份正序看会先遇到风格未定型的作品。建议先看代表作的修复版，再回看早期黑白片，能更快分辨摄影与剪辑的变化。以 11 月重映的 4 部华语老片为例，先看 1983 年那部，再回看 1980 年前后的作品，构图差异更清楚。</div>
+      </details>
+      <details class="faq">
+        <summary>点映场和正式上映的票有什么区别</summary>
+        <div class="fb">点映场多数不退不换，场次少、厅型固定。《长夜车队》11月13日点映仅限 IMAX 厅，合计 34 场；正式上映后普通厅与 IMAX 厅都会排，票价差通常在 20—40 元之间。买点映票前先确认能否改签。</div>
+      </details>
+    </section>
+
+    <section class="block" id="reviews" aria-labelledby="rvH2">
+      <div class="bh">
+        <h2 id="rvH2">观众评论</h2>
+        <span class="sub">映后与追更留言节选，保留原话</span>
+      </div>
+      <div class="reviews">
+        <div class="rv">
+          <div class="rvt">《雾港来信》国语原声场 <em>11月6日 19:40 场</em></div>
+          <div class="star">★★★★☆</div>
+          <p>码头那场长镜头值回票价，但中段两场信件独白节奏拖了。散场听到有人说“比预告慢”，确实慢，后面半小时才把线索收回来。</p>
+        </div>
+        <div class="rv">
+          <div class="rvt">《城南旧事》修复版 <em>11月2日 资料馆场</em></div>
+          <div class="star">★★★★★</div>
+          <p>画幅说明卡很有用，看之前不知道 1.33:1 和 1.85:1 差这么多。左右多出来的院墙第一次看到，座位靠后一点观感更好。</p>
+        </div>
+        <div class="rv">
+          <div class="rvt">《无声证词》第 3 集 <em>11月5日追更</em></div>
+          <div class="star">★★★☆☆</div>
+          <p>物证解释得太快了，第 2 集结尾刚留的悬念，第 3 集开头六分钟就说完。周更本来是想让人讨论，这么处理反而没得聊。</p>
+        </div>
+        <div class="rv">
+          <div class="rvt">《长夜车队》点映开票 <em>11月7日留言</em></div>
+          <div class="star">—</div>
+          <p>IMAX 点映只有 34 场，6 城摊下来每城不到 6 场。11月8日中午开票，普通厅要等到 15 号，跨城看成本不低，先观望。</p>
+        </div>
+        <div class="rv">
+          <div class="rvt">《三餐四季》第 3 集 <em>11月1日一次看完</em></div>
+          <div class="star">★★★★☆</div>
+          <p>苏州面馆凌晨备料那一段拍得细，切菜声和灶火声都没压。第 6 集转到云南菌市后略散，跟前三集的家庭线接得不够紧。</p>
+        </div>
+        <div class="rv">
+          <div class="rvt">《棋盘之外》第 1 集 <em>11月5日</em></div>
+          <div class="star">★★☆☆☆</div>
+          <p>用一整段对局讲规则差异，想法清楚，但 45 分钟里对局占了 20 分钟，人物几乎没立起来。慢不是问题，第一集这么慢有点冒险。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="news" aria-labelledby="nwH2">
+      <div class="bh">
+        <h2 id="nwH2">相关资讯</h2>
+        <span class="sub">发行、排片与影展动态</span>
+      </div>
+      <div class="news">
+        <a class="nw" href="/#updates">
+          <div class="nd">11月7日</div>
+          <div class="nt">六个城市新增《雾港来信》国语原声场</div>
+          <div class="nx">成都、武汉、西安共 11 家影院加入，最早场次 11月8日 14:20。</div>
+        </a>
+        <a class="nw" href="/#updates">
+          <div class="nd">11月6日</div>
+          <div class="nt">《城南旧事》修复版加开周中场</div>
+          <div class="nx">每周三 19:30 一场，映前说明卡照旧播放。</div>
+        </a>
+        <a class="nw" href="/#deep">
+          <div class="nd">11月4日</div>
+          <div class="nt">《黑胶年代》修复版撤下 11月10日场次</div>
+          <div class="nx">发行方称字幕校对未完成，新日期未定，已购票可退。</div>
+        </a>
+        <a class="nw" href="/#picks">
+          <div class="nd">11月1日</div>
+          <div class="nt">《三餐四季》8 集一次放出</div>
+          <div class="nx">跟拍四户人家一年饭桌，第 6 集转到云南菌市。</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="block" id="rank" aria-labelledby="rkH2">
+      <div class="bh">
+        <h2 id="rkH2">修复版可信度分层榜</h2>
+        <span class="sub">按扫描源、画幅、声轨三项核对</span>
+      </div>
+      <ol class="rank">
+        <li><div><div class="rt">城南旧事</div><div class="rd">原底片 4K 扫描，1.85:1 还原，保留原始单声道</div></div><div class="rn">三项全中</div></li>
+        <li><div><div class="rt">夜班船</div><div class="rd">原底片扫描，画幅未改，重混 5.1 提供双选项</div></div><div class="rn">三项全中</div></li>
+        <li><div><div class="rt">早春信笺</div><div class="rd">2K 扫描放大 4K，画幅一致，单声道保留</div></div><div class="rn">两项</div></li>
+        <li><div><div class="rt">旧城十二时</div><div class="rd">翻正片扫描，画幅一致，仅重混声轨</div></div><div class="rn">两项</div></li>
+        <li><div><div class="rt">黑胶年代</div><div class="rd">扫描源未披露，11月10日场次已撤</div></div><div class="rn">一项</div></li>
+      </ol>
+    </section>
+
+    <section class="block" id="reco" aria-labelledby="rcH2">
+      <div class="bh">
+        <h2 id="rcH2">相关推荐</h2>
+        <span class="sub">延伸条目与专题入口</span>
+      </div>
+      <div class="reco">
+        <a href="/#picks">雾港来信国语原声场次</a>
+        <a href="/#picks">长夜车队IMAX点映开票</a>
+        <a href="/#deep">城南旧事4K修复画幅对照</a>
+        <a href="/#updates">无声证词周更时间表</a>
+        <a href="/#picks">三餐四季纪录片连看</a>
+        <a href="/#guide">艺术联盟影院排片查询</a>
+        <a href="/#rank">修复版可信度分层</a>
+        <a href="/#deep">导演专题补片顺序</a>
+        <a href="/#updates">棋盘之外第3集更新</a>
+        <a href="/#faq">点映场退改规则</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="side" aria-label="侧栏">
+    <div class="panel">
+      <h3>栏内导航</h3>
+      <nav class="side-nav" id="sideNav" aria-label="侧栏栏目导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选片单</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#reviews">观众评论</a>
+        <a href="/#rank">修复榜</a>
+      </nav>
+    </div>
+    <div class="panel">
+      <h3>本周放映密度</h3>
+      <p style="font-size:13.5px;margin:0">11月6日单日 5 部新片公映；11月3日、11月4日无新片，仅有 7 场点映。11月13日 IMAX 点映 34 场，集中在 6 城。</p>
+    </div>
+    <div class="panel">
+      <h3>修复进度表</h3>
+      <p style="font-size:13.5px;margin:0">原底片扫描 3 部、2K 放大 4 部、扫描源未披露 2 部。《黑胶年代》11月10日场次已撤，待发行方补充说明。</p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#173453"/>
+            <path d="M18 20h10v24H18zM36 20l12 12-12 12z" fill="#f0b429"/>
+          </svg>
+          <b>影视先锋资源站噜噜噜</b>
+        </div>
+        <p class="fpos">按上映日期、介质版本与导演序列整理片目，每条附可核对的日期与来源。</p>
+      </div>
+      <div>
+        <h4>片单与更新</h4>
+        <div class="flinks">
+          <a href="/#picks">本周精选</a>
+          <a href="/#updates">最新更新</a>
+          <a href="/#cats">分类入口</a>
+          <a href="/#news">相关资讯</a>
+        </div>
+      </div>
+      <div>
+        <h4>解析与指南</h4>
+        <div class="flinks">
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#rank">修复榜</a>
+          <a href="/#reco">相关推荐</a>
+        </div>
+      </div>
+      <div>
+        <h4>答疑与交流</h4>
+        <div class="flinks">
+          <a href="/#faq">常见问答</a>
+          <a href="/#reviews">观众评论</a>
+          <a href="/#overview">领域概览</a>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>页内条目与评论为示例数据，日期以 2026-11-08 为基准整理；片目与排片请以发行方公开信息为准。</span>
+      <span>© 2026 影视先锋资源站噜噜噜 · 内容更新时间 2026-11-08 09:30</span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" type="button" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var mainNav=document.getElementById('mainNav');
+  if(menuBtn&&mainNav){
+    menuBtn.addEventListener('click',function(){
+      var open=mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+      menuBtn.textContent=open?'收起菜单':'栏目菜单';
+    });
+    mainNav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.matchMedia('(max-width:820px)').matches){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent='栏目菜单';
+      }
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY>420){toTop.classList.add('on');}else{toTop.classList.remove('on');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var sideLinks=[].slice.call(document.querySelectorAll('#sideNav a'));
+  var ids=sideLinks.map(function(a){return a.getAttribute('href').split('#')[1];});
+  var targets=ids.map(function(id){return document.getElementById(id);});
+  function highlight(){
+    var pos=window.scrollY+140,cur=null;
+    targets.forEach(function(t,i){ if(t&&t.offsetTop<=pos){cur=i;} });
+    sideLinks.forEach(function(a,i){a.classList.toggle('cur',i===cur);});
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  var q=document.getElementById('q');
+  var qb=document.getElementById('qbtn');
+  var msg=document.getElementById('searchMsg');
+  function doSearch(){
+    var kw=(q.value||'').trim();
+    if(!kw){msg.textContent='请输入片名、导演或类型词，例如“雾港来信”“修复”。';msg.classList.add('on');return;}
+    var hits=[];
+    document.querySelectorAll('main h3, main .ut, main .rt, main summary, main .nw .nt').forEach(function(el){
+      if(el.textContent.indexOf(kw)>-1){hits.push(el);}
+    });
+    if(!hits.length){
+      msg.textContent='没有找到与“'+kw+'”匹配的条目，可换用导演名、类型词或上映日期再试。';
+      msg.classList.add('on');
+      return;
+    }
+    msg.textContent='找到 '+hits.length+' 条含“'+kw+'”的条目，已定位到第一条。';
+    msg.classList.add('on');
+    hits[0].scrollIntoView({behavior:'smooth',block:'center'});
+    var wrapEl=hits[0].closest('.block');
+    if(wrapEl){wrapEl.style.outline='3px solid #f0b429';wrapEl.style.outlineOffset='2px';
+      setTimeout(function(){wrapEl.style.outline='';},1800);}
+  }
+  if(qb){qb.addEventListener('click',doSearch);}
+  if(q){q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();doSearch();}});}
+})();
+</script>
+</body>
+                                </html>
